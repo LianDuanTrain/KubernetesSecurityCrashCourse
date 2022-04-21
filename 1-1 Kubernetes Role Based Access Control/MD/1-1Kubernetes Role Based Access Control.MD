@@ -14,7 +14,7 @@
 ## Role-Based Access Control (RBAC)
 
 - RBAC   
- <image src='./images/RBAC.png'  width="80%">   
+ <image src='./images/rbac.png'  width="80%">   
 
 - K8s RBAC
   - Role
