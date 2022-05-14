@@ -1,0 +1,22 @@
+
+docker build -t lianduantraining/springbootdemo:v7 .
+docker push lianduantraining/springbootdemo:v7
+
+docker-compose up -d
+docker-compose down
+
+
+docker exec -it -u root springBoot /bin/sh
+apt install curl
+curl http://localhost:9999/users
+
+curl http://springBoot:9999/users
+
+wget http://springBoot:9999/users
+
+wget http://172.20.0.5:9999/users
+
+
+docker exec -it busybox /bin/sh
+
+wget  springBoot:9999/users
