@@ -1,0 +1,141 @@
+
+Testing lianduantraining/springbootdemo:v8...
+
+Organization:      lian.duan.training
+Package manager:   deb
+Target file:       /app/Dockerfile
+Project name:      docker-image|lianduantraining/springbootdemo
+Docker image:      lianduantraining/springbootdemo:v8
+Platform:          linux/amd64
+Base image:        openjdk:8-jre-slim
+Licenses:          enabled
+
+✔ Tested 91 dependencies for known issues, no vulnerable paths found.
+
+Your base image is out of date
+1) Pull the latest version of your base image by running 'docker pull openjdk:8-jre-slim'
+2) Rebuild your local image
+
+-------------------------------------------------------
+
+Testing lianduantraining/springbootdemo:v8...
+
+Tested 64 dependencies for known issues, found 13 issues.
+
+
+Issues to fix by upgrading:
+
+  Upgrade ch.qos.logback:logback-core@1.2.3 to ch.qos.logback:logback-core@1.2.7 to fix
+  ✗ Insufficient Hostname Verification [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-1726923] in ch.qos.logback:logback-core@1.2.3
+    introduced by ch.qos.logback:logback-core@1.2.3
+
+  Upgrade com.fasterxml.jackson.core:jackson-databind@2.11.2 to com.fasterxml.jackson.core:jackson-databind@2.12.6.1 to fix
+  ✗ Denial of Service (DoS) [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-2326698] in com.fasterxml.jackson.core:jackson-databind@2.11.2
+    introduced by com.fasterxml.jackson.core:jackson-databind@2.11.2
+  ✗ Denial of Service (DoS) [High Severity][https://snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-2421244] in com.fasterxml.jackson.core:jackson-databind@2.11.2
+    introduced by com.fasterxml.jackson.core:jackson-databind@2.11.2
+
+  Upgrade io.netty:netty-codec@4.1.51.Final to io.netty:netty-codec@4.1.68.Final to fix
+  ✗ Denial of Service (DoS) [High Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1584063] in io.netty:netty-codec@4.1.51.Final
+    introduced by io.netty:netty-codec@4.1.51.Final
+  ✗ Denial of Service (DoS) [High Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1584064] in io.netty:netty-codec@4.1.51.Final
+    introduced by io.netty:netty-codec@4.1.51.Final
+
+  Upgrade io.netty:netty-common@4.1.51.Final to io.netty:netty-common@4.1.77.Final to fix
+  ✗ Information Exposure (new) [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-2812456] in io.netty:netty-common@4.1.51.Final
+    introduced by io.netty:netty-common@4.1.51.Final
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082234] in io.netty:netty-common@4.1.51.Final
+    introduced by io.netty:netty-common@4.1.51.Final
+
+  Upgrade io.netty:netty-handler@4.1.51.Final to io.netty:netty-handler@4.1.59.Final to fix
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082235] in io.netty:netty-handler@4.1.51.Final
+    introduced by io.netty:netty-handler@4.1.51.Final
+
+  Upgrade io.netty:netty-transport@4.1.51.Final to io.netty:netty-transport@4.1.59.Final to fix
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082236] in io.netty:netty-transport@4.1.51.Final
+    introduced by io.netty:netty-transport@4.1.51.Final
+
+  Upgrade org.glassfish.jersey.core:jersey-common@2.30.1 to org.glassfish.jersey.core:jersey-common@2.34 to fix
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-ORGGLASSFISHJERSEYCORE-1255637] in org.glassfish.jersey.core:jersey-common@2.30.1
+    introduced by org.glassfish.jersey.core:jersey-common@2.30.1
+
+  Upgrade org.glassfish.jersey.media:jersey-media-jaxb@2.30.1 to org.glassfish.jersey.media:jersey-media-jaxb@2.31 to fix
+  ✗ XML Entity Expansion [High Severity][https://snyk.io/vuln/SNYK-JAVA-ORGGLASSFISHJERSEYMEDIA-595972] in org.glassfish.jersey.media:jersey-media-jaxb@2.30.1
+    introduced by org.glassfish.jersey.media:jersey-media-jaxb@2.30.1
+
+  Upgrade org.glassfish:jakarta.el@3.0.3 to org.glassfish:jakarta.el@3.0.4 to fix
+  ✗ Improper Input Validation [High Severity][https://snyk.io/vuln/SNYK-JAVA-ORGGLASSFISH-1297098] in org.glassfish:jakarta.el@3.0.3
+    introduced by org.glassfish:jakarta.el@3.0.3
+
+
+Issues with no direct upgrade or patch:
+  ✗ Improper Certificate Validation [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1042268] in io.netty:netty-handler@4.1.51.Final
+    introduced by io.netty:netty-handler@4.1.51.Final
+  No upgrade or patch available
+
+
+
+Organization:      lian.duan.training
+Package manager:   maven
+Target file:       /myMicroservice
+Project name:      lianduantraining/springbootdemo:v8:/myMicroservice
+Docker image:      lianduantraining/springbootdemo:v8
+Licenses:          enabled
+
+-------------------------------------------------------
+
+Testing lianduantraining/springbootdemo:v8...
+
+Organization:      lian.duan.training
+Package manager:   maven
+Target file:       /usr/local/openjdk-8/lib
+Project name:      lianduantraining/springbootdemo:v8:/usr/local/openjdk-8/lib
+Docker image:      lianduantraining/springbootdemo:v8
+Licenses:          enabled
+
+✔ Tested lianduantraining/springbootdemo:v8 for known issues, no vulnerable paths found.
+
+-------------------------------------------------------
+
+Testing lianduantraining/springbootdemo:v8...
+
+Organization:      lian.duan.training
+Package manager:   maven
+Target file:       /usr/local/openjdk-8/lib/ext
+Project name:      lianduantraining/springbootdemo:v8:/usr/local/openjdk-8/lib/ext
+Docker image:      lianduantraining/springbootdemo:v8
+Licenses:          enabled
+
+✔ Tested lianduantraining/springbootdemo:v8 for known issues, no vulnerable paths found.
+
+-------------------------------------------------------
+
+Testing lianduantraining/springbootdemo:v8...
+
+Organization:      lian.duan.training
+Package manager:   maven
+Target file:       /usr/local/openjdk-8/lib/security/policy/limited
+Project name:      lianduantraining/springbootdemo:v8:/usr/local/openjdk-8/lib/security/policy/limited
+Docker image:      lianduantraining/springbootdemo:v8
+Licenses:          enabled
+
+✔ Tested lianduantraining/springbootdemo:v8 for known issues, no vulnerable paths found.
+
+-------------------------------------------------------
+
+Testing lianduantraining/springbootdemo:v8...
+
+Organization:      lian.duan.training
+Package manager:   maven
+Target file:       /usr/local/openjdk-8/lib/security/policy/unlimited
+Project name:      lianduantraining/springbootdemo:v8:/usr/local/openjdk-8/lib/security/policy/unlimited
+Docker image:      lianduantraining/springbootdemo:v8
+Licenses:          enabled
+
+✔ Tested lianduantraining/springbootdemo:v8 for known issues, no vulnerable paths found.
+
+
+Tested 6 projects, 1 contained vulnerable paths.
+
+
+
