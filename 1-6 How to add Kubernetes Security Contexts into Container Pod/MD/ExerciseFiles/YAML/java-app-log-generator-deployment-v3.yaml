@@ -21,7 +21,9 @@ spec:
         node.type: java-app-log-generator
     spec: 
       securityContext: 
-        runAsUser: 20001
+        runAsUser:  10001
+        runAsGroup: 20001
+        runAsNonRoot: true
       containers:
         - env:
             - name: RATE
@@ -36,9 +38,11 @@ spec:
               memory: "128Mi"
               cpu: "500m"
           securityContext:
-            runAsUser: 10001
-            runAsGroup: 30001
-            allowPrivilegeEscalation: false  
+            runAsUser:  30001
+            runAsGroup: 40001
+            allowPrivilegeEscalation: false 
             readOnlyRootFilesystem: true
-            runAsNonRoot: true
+            capabilities:
+                drop:
+                  - all
  
