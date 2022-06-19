@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    node.type: java-app-log-generator
+  name: java-app-log-generator
+  namespace: app
+spec:  
+  replicas: 1
+  selector:
+    matchLabels:
+      node.type: java-app-log-generator  
+  template:
+    metadata:
+      labels:
+        node.type: java-app-log-generator
+    spec: 
+      securityContext: 
+        runAsUser:  10001
+        runAsGroup: 20001
+        runAsNonRoot: false
+      containers:
+        - env:
+            - name: RATE
+              value: "10"
+          name: java-app-log-generator    
+          image: lianduantraining/java-app-log-generator:v1
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          securityContext:
+            runAsUser:  30001
+            runAsGroup: 40001
+            allowPrivilegeEscalation: true 
+            readOnlyRootFilesystem: true
+            capabilities:
+                drop:
+                  - all
+ 
